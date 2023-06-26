@@ -350,7 +350,16 @@ a:active {
     color: var(--color-primary);
     background: var(--color-white);
 }
-
+@media only screen and ( max-width: 480px){
+    html{
+        font-size: 57%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    html{
+        font-size: 60%;
+    }
+}
 /* Helpers
       ============================= */
 
@@ -507,7 +516,6 @@ ul.row {
 
 /* Footer
       ============================= */
-
 .footer {
     --nav-item-font-weight: normal;
     --nav-item-font-size: var(--font-size-small);
@@ -534,6 +542,19 @@ ul.row {
 
 .social-link>svg {
     fill: var(--text-color);
+}
+@media only screen and(max-width: 767px){
+    :root {
+        --footer-padding: 5rem 2rem 1rem;
+    }
+    .footer .social.nav,
+    .footer .footer-nav {
+        text-align: center;
+    }
+    .social.nav li + li,
+    .footer-nav li + li {
+        padding-left: 2rem;
+    }
 }
 
 /*** 3. SECTION ***/
@@ -588,6 +609,10 @@ ul.row {
 /* Section HERO
       ============================= */
 
+.article-page .section-hero {
+    margin-top: -8.5rem;
+    padding-top: 5rem;
+}
 .section-hero {
     position: relative;
     margin-top: -8.5rem;
@@ -720,6 +745,18 @@ ul.row {
 
 .card-work:hover .card-title {
     opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+    .card-work .card-inner {
+        --text-color: var(--color-white);
+        position: relative;
+    }
+    .card-work .card-title {
+        opacity: 1;
+    }
+    .card-work .card-title a {
+        padding: 2rem 1rem 0 1rem;
+    }
 }
 
 /* Card SERVICES
