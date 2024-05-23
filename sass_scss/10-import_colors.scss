@@ -1,0 +1,18 @@
+// 10-import_colors.scss
+
+// Import color variables
+@import "10-colors.scss";
+
+// Use imported variables to assign text colors
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
