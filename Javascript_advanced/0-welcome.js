@@ -5,4 +5,4 @@ function welcome(firstName, lastName) {
     }
     displayFullName(fullName);
 }
-welcome('John', 'Doe');
+welcome('eggceptional', 'individual')
